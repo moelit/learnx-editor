@@ -1,0 +1,135 @@
+body::-webkit-scrollbar {
+     display: none!important;
+ }
+
+::-webkit-scrollbar {
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: rgba(0,0,0,0);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color:  rgba(0,0,0,.12);
+}
+
+.theme--dark::-webkit-scrollbar-thumb {
+    background-color: rgba(255,255,255,.12)!important;
+}
+
+.card-container {
+    margin: 16px;
+    padding-bottom: 12px;
+}
+
+.card-toolbar {
+    height: 64px!important;
+    padding: 0!important;
+    background: rgba(0,0,0,0)!important;
+}
+
+.card-main {
+    height: 66vh;
+    padding: 0 20px;
+    overflow: auto!important;
+}
+
+.card-error {
+    color: red!important;
+}
+
+.card-message {
+    margin: 18px;
+    max-width: 500px!important;
+    min-width: 300px!important;
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+hr { display: block; height: 1px;
+    border: 0; border-top: 1px solid rgba(0, 0, 0, 0.12);
+    margin: 1em 0; padding: 0; }
+
+.theme--dark hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.ProseMirror {
+    padding: 0 4px;
+    outline:0!important;
+    font-size: 17px;
+    overflow: auto!important;
+}
+
+.ProseMirror #title {
+    margin-left: -4px!important;
+}
+
+.ProseMirror #keys {
+    border-left: none!important;
+    padding-left: 0!important;
+}
+
+.ProseMirror #title:before,
+.ProseMirror #summary:before,
+.ProseMirror #keys:before {
+    content: attr(data-placeholder);
+    color: #aaa;
+    pointer-events: none;
+}
+
+.ProseMirror p.placeholder:first-child::before {
+    content: attr(data-placeholder);
+    float: left;
+    color: #aaa;
+    pointer-events: none;
+    height: 0;
+    font-style: italic;
+}
+
+.ProseMirror h1,
+.ProseMirror h2,
+.ProseMirror h3,
+.ProseMirror h4{margin:10px 0 20px!important}
+.ProseMirror img {max-width: 100%;}
+.ProseMirror blockquote{border-left:.25em solid #dfe2e5;color:#6a737d;padding-left:1em;margin:20px 0!important}
+.ProseMirror code{padding:0 4px!important;margin:0 5px!important}
+.ProseMirror pre code{padding:8px!important;margin:0 5px!important}
+.ProseMirror code:after,
+.ProseMirror code:before{content:none!important;letter-spacing:normal!important}
+.ProseMirror p{margin-top:0px!important;margin-bottom:0!important;min-height:28px}
+
+.editor-assets {
+    overflow-x: hidden!important;
+}
+
+.editor-assets .overlay {
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 9998;
+    font-size: 1.75rem;
+    letter-spacing: 1px;
+    background: rgba(0,0,0,.66);
+    transition:all .5s
+}
+
+.editor-assets .overlay div {
+    color: white;
+    text-align: center;
+    width: 400px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%)  translateY(-50%);
+}
+
+.editor-assets .draggable_img {
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    opacity: 0
+}

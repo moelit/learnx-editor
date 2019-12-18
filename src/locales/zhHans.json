@@ -1,0 +1,96 @@
+{
+  "name": "中文简体",
+  "message": "项目介绍与更多内容，待后续更新",
+  "pages": {
+    "news": {"name": "写动态", "title": "消息动态"},
+    "class": {"name": "写教程", "children": ["初级教程", "中级教程", "高级教程", "实践教程"]},
+    "edit": {"name": "编辑文章", "title": "编辑文章"},
+    "translate": {"name": "翻译文章", "title": "翻译文章"}
+  },
+  "btn":{
+    "import_files": "导入文件",
+    "random_pics": "刷新灵感",
+    "clear_all": "全部清空",
+    "clear": "清除",
+    "done": "确定",
+    "reset": "重置",
+    "retry": "重试",
+    "download": "下载",
+    "cancel": "取消",
+    "preview": "预览",
+    "search": "搜索",
+    "edit": "修改",
+    "delete": "删除",
+    "back": "返回"
+  },
+  "menu": ["写动态", "写教程", "初级教程", "中级教程", "高级教程", "实践教程", "编辑文章"],
+  "editor_menu": ["粗体","斜体","删除线","下划线","代码块","H1 标题","H2 标题","H3 标题","段落","引用","无序列表","有序列表","分隔线","撤销","重做"],
+  "editor":{
+    "assets_preview": "资源管理",
+    "i_am_banner": "我是封面",
+    "check_and_upload": "检查无误，发布",
+    "vip_only": "会员专属",
+    "public": "公开可见",
+    "preview": "文章预览",
+    "post_success": "文章发布成功"
+  },
+  "delete" : {
+    "title" : "删除文章",
+    "confirm" : "如需确定，输入大写的 DELETE",
+    "msg1_start" : "文章名",
+    "msg1_end" : "确定吗？",
+    "msg2_start" : "删除后",
+    "msg2_highlight" : "将无法恢复",
+    "msg2_end" : "确定吗？",
+    "msg_error" : "发生异常错误！"
+  },
+  "token" : {
+    "take_token": "上传凭证",
+    "unbind": "未绑定",
+    "bind_failed": "绑定失败",
+    "input_password": "输入凭证密码",
+    "builder": {
+      "title": "凭证生成器",
+      "name": "项目名",
+      "name_hint": "例如，xx学习网",
+      "url": "网站路径",
+      "url_hint": "http(s)://www.example.com/page",
+      "language": "默认语言",
+      "language_hint": "选择...",
+      "platform": "部署平台",
+      "platform_hint": "选择...",
+      "password": "密码",
+      "password_hint": "用来加密凭证，提高存储安全",
+      "ready": "准备生成",
+      "save": "保存",
+      "aliyun OSS": {
+        "name" : "阿里云 OSS",
+        "region": "Region",
+        "bucket": "Bucket",
+        "accessKeyId": "Access Key Id",
+        "accessKeySecret": "Access Key Secret"
+      }
+    }
+  },
+  "selecter":{
+    "types": ["动态", "初级教程", "中级教程", "高级教程", "实践教程"],
+    "search_hint": "搜索",
+    "search_placeholder": "输入 标题 或 关键字",
+    "chip_title": "标题",
+    "chip_keyword": "关键字",
+    "result_empty": "没有匹配的文章"
+  },
+  "error":{
+    "no_banner": "错误：没有封面",
+    "no_title": "错误：没有标题",
+    "no_summary": "错误：缺少描述",
+    "no_keys": "错误：缺少关键字",
+    "no_token": "异常：没有绑定网站",
+    "upload_exception": "凭证失效或上传故障",
+    "download_file": "下载文件错误",
+    "download_file_desc": "可能由网络或其它原因引起的故障，请稍后再试。"
+  },
+  "$vuetify": {
+      "noDataText": "没有匹配的数据"
+  }
+}
