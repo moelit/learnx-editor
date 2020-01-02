@@ -104,7 +104,7 @@ exports.install = function (Vue) {
                 });
 
                 let result = Buffer.isBuffer(file) ? await client.put(filepath, file) :
-                    await client.multipartUpload(filepath, file);
+                    await client.put(filepath, file);
 
                 console.warn = temp;
                 return result;
